@@ -8,5 +8,5 @@ gulp.task('default', function() {
 gulp.task('compile', function(){
 	gulp.src(['src/*.ts'])
 		.pipe(typescript({module: "amd"}))
-		.pipe(gulp.dest('bin/js/'))
+		.pipe(gulp.dest('bin/js/'));
 });
